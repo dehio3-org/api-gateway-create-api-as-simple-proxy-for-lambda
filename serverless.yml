@@ -1,0 +1,26 @@
+service: 
+    name: HelloWorld
+  
+provider:
+    name: aws
+    region: us-east-1
+    runtime: nodejs12.x
+    stage: test
+    apiName: LambdaSimpleProxy
+    endpointType: REGIONAL
+
+functions:
+    GetStartedLambdaProxyIntegration:
+      handler: index.handler
+      name: GetStartedLambdaProxyIntegration
+      events:
+        - http:
+            path: /helloworld
+            method: any
+            integration: lambda-proxy
+      
+package:
+  exclude:
+    - '**'
+  include:
+    - 'index.js'

@@ -1,0 +1,14 @@
+{
+    "name": "lambda-simple-proxy",
+    "devDependencies": {
+        "serverless": "^1.74.1"
+    },
+    "scripts": {
+        "package": "serverless package",
+        "print": "serverless print",
+        "deploy": "serverless deploy",
+        "remove": "serverless remove"
+    },
+    "license": "UNLICENSED",
+    "private": true
+}
