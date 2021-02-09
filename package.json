@@ -1,7 +1,7 @@
 {
     "name": "lambda-simple-proxy",
     "devDependencies": {
-        "serverless": "^1.74.1"
+        "serverless": "^2.23.0"
     },
     "scripts": {
         "package": "serverless package",
